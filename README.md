@@ -15,7 +15,6 @@ Technical Stack
 2. Sass
 
 Build Guide:
-git clone https://github.com/AGRU13/mars-rover.git
 cd mars-rover
 npm i sass
 npm i react-modal
