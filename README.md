@@ -3,12 +3,16 @@ Pathfinding Visualizer
 
 Website visualizing different pathfinding algorithms, as well as some random maze generating algortihms.
 
+Random Maze Generator
+
+![2022-10-02 18-06-46_Trim](https://user-images.githubusercontent.com/106914918/193454464-44116965-db32-4cb2-9600-ac174224c35d.gif)
+
 Pathfinding Algorithms present:
 1. BFS
 2. DFS
 3. Dijkstra
 
-Random Maze Generator
+https://user-images.githubusercontent.com/106914918/193454490-a28a703b-b560-4f4a-a4e3-b46a9a17173d.mp4
 
 Technical Stack
 1. ReactJS
