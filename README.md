@@ -12,7 +12,7 @@ Pathfinding Algorithms present:
 2. DFS
 3. Dijkstra
 
-https://user-images.githubusercontent.com/106914918/193454490-a28a703b-b560-4f4a-a4e3-b46a9a17173d.mp4
+![ezgif-3-4b6780592c](https://user-images.githubusercontent.com/106914918/193454714-6b734dfc-5fc7-4e26-8629-31854c042027.gif)
 
 Technical Stack
 1. ReactJS
