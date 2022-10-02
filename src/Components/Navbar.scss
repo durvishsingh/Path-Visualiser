@@ -1,0 +1,182 @@
+
+%disabled {
+    color: #34495E;
+    box-shadow: none;
+  }
+
+.content-header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #000000;
+    background:  #34495E;
+    font-family: 'Roboto', sans-serif;
+    :first-child{
+        margin-left: 40px;
+    }
+    :last-child{
+        margin-right: 0;
+    }
+    &__select {
+      display: inline-flex;
+      height: 50px;
+      margin: 0px 0px;
+      border-radius: 0px;
+      font-weight: bold;
+      font-family: inherit;
+      font-size: inherit;
+      color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      background:  #34495E ;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='40' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 100%;
+      background-position-y: 5px;
+      padding-left: 10px;
+        &option{
+            box-shadow: 0 3px 3px 0 #000;
+        }
+      &:disabled {
+        color: white;
+        box-shadow: none;
+      }
+      &:hover:enabled {
+        color: #82e0aa;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='40' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      }
+    }
+  
+    &__button {
+      $button: &;
+      display: inline-flex;
+      height: 35px;
+      align-items: center;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: inherit;
+      cursor: pointer;
+      background-color: #34495E;
+      appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      padding: 0 15px;
+      margin:10px 40px;
+      color: white;
+      transition: transform 0.2s linear;
+      outline: none;
+      &--pause {
+        @extend #{$button};
+        background-color: #a8a2a2;
+      }
+  
+      &--usage {
+        @extend #{$button};
+        background-color: #a57171;
+        box-shadow: 0 3px 3px 0 #ce0808 ;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      &:hover:enabled {
+        color: #82e0aa;
+      }
+  
+      &:disabled {
+        @extend %disabled;
+      }
+    }
+
+    &__visualize{
+      $button: &;
+      display: inline-flex;
+      height: 35px;
+      align-items: center;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: inherit;
+      cursor: pointer;
+      background-color: #82e0aa;
+      appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      border-radius: 5px;
+      padding: 0 15px;
+      margin:10px 40px;
+      color: black;
+      transition: transform 0.2s linear;
+      outline: none;
+      &--pause {
+        @extend #{$button};
+        background-color: #a8a2a2;
+      }
+  
+      &--usage {
+        @extend #{$button};
+        background-color: #a57171;
+        box-shadow: 0 3px 3px 0 #ce0808 ;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      &:hover:enabled {
+        color: white;
+      }
+  
+      &:disabled {
+        @extend %disabled;
+      }
+    }
+
+    &__tutorial{
+      $button: &;
+      display: inline-flex;
+      height: 35px;
+      align-items: center;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: inherit;
+      cursor: pointer;
+      background-color: #ffffff;
+      appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      border-radius: 5px;
+      padding: 0 15px;
+      margin:0 40px;
+      
+      color: inherit;
+      transition: transform 0.2s linear;
+      outline: none;
+      &--pause {
+        @extend #{$button};
+        background-color: #a8a2a2;
+      }
+  
+      &--usage {
+        @extend #{$button};
+        background-color: #a57171;
+        box-shadow: 0 3px 3px 0 #ce0808 ;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      &:hover:enabled {
+        box-shadow: 0 3px 3px 0 #000000;
+      }
+  
+      &:disabled {
+        @extend %disabled;
+      }
+    }
+  }
